@@ -2,6 +2,7 @@
 // @name        豆瓣 ReadFree 传送门
 // @namespace   https://github.com/JiajunW/douban2readfree
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
+// @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     http://book.douban.com/subject/*
 // @version     1.0.0
 // @grant       GM_xmlhttpRequest
