@@ -3,8 +3,8 @@
 // @namespace   https://github.com/JiajunW/douban2readfree
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
-// @include     http://book.douban.com/subject/*
-// @version     1.0.1
+// @include     https://book.douban.com/subject/*
+// @version     1.0.2
 // @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
