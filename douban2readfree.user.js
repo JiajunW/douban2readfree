@@ -4,11 +4,12 @@
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     https://book.douban.com/subject/*
-// @version     1.0.2
+// @version     1.0.3
 // @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
+// @connect     readfree.me
 // ==/UserScript==
 
 (function() {
@@ -26,16 +27,16 @@
     }
 
     function dom(tag, attr, inner) {
-        var tag = document.createElement(tag);
+        var el = document.createElement(tag);
         for (var key in attr) {
             if (attr.hasOwnProperty(key)) {
-                tag.setAttribute(key,attr[key]);
+                el.setAttribute(key,attr[key]);
             }
         }
         if (inner) {
-            tag.innerHTML = inner;
+            el.innerHTML = inner;
         }
-        return tag;
+        return el;
     }
 
     var id = get_book_id();
@@ -51,7 +52,7 @@
         onload: function(response) {
             if (response.status == 200) {
                 var panel = dom('div', { id : 'readfree-link' }),
-                    ahref = dom('a', { href : rf_url, target : '_blank' }, 'ReadFree!')
+                    ahref = dom('a', { href : rf_url, target : '_blank' }, 'ReadFree!');
                 panel.appendChild(ahref);
                 document.body.appendChild(panel);
 
