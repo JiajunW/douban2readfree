@@ -66,7 +66,7 @@ function all_book() {
     let my_a = document.querySelectorAll("a");
     for (let i = 0; i < my_a.length; i++) {
         let this_a = my_a[i];
-        if (this_a.parentNode.nodeName !== "DT"){
+        if (this_a.children[0] === undefined){
             if (this_a.href.indexOf("subject")) {
                 let id = get_book_id(this_a.href);
                 if (id) {
