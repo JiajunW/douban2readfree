@@ -11,6 +11,8 @@ ReadFree（ http://readfree.me/ ）是超好用的电子书分享平台，在这
 ## 截图
 
 ![](https://github.com/JiajunW/douban2readfree/raw/master/res/screenshot.png)
+![](https://github.com/carycoti/douban2readfree/blob/master/res/ep1.jpg)
+![](https://github.com/carycoti/douban2readfree/blob/master/res/ep2.jpg)
 
 ## 使用方法
 
