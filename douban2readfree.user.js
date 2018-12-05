@@ -4,7 +4,7 @@
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     https://book.douban.com/*
-// @version     1.0.4
+// @version     1.0.5
 // @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
@@ -66,7 +66,7 @@ function all_book() {
     let my_a = document.querySelectorAll("a");
     for (let i = 0; i < my_a.length; i++) {
         let this_a = my_a[i];
-        if (this_a.children[0] === undefined){
+        if (this_a.children[0] === undefined || this_a.children[0].nodeName !== "IMG"){
             if (this_a.href.indexOf("subject")) {
                 let id = get_book_id(this_a.href);
                 if (id) {
