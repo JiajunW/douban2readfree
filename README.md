@@ -10,17 +10,15 @@ ReadFree（ http://readfree.me/ ）是超好用的电子书分享平台，在这
 
 ## 截图
 
-![](https://github.com/JiajunW/douban2readfree/raw/master/res/screenshot.png)  
 #### 书籍内页效果
 ![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep1.png)  
 
-
 ![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep2.png)
-#### 首页效果
+
 ![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep3.png)
 
-#### 月亮与六便士
-![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB%20(%E8%B1%86%E7%93%A3).png)
+#### 首页效果
+![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep4.png)
 
 ## 使用方法
 
@@ -28,7 +26,7 @@ ReadFree（ http://readfree.me/ ）是超好用的电子书分享平台，在这
 
 **Firefox:** 安装 [Greasemonkey](https://addons.mozilla.org/en-UgS/firefox/addon/greasemonkey/)，然后打开上述安装页面，点击**安装脚本**。
 
-**Chrome:** 安装 [Tampermonkey](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)，然后打开上述安装页面，点击**安装脚本**。
+**Chrome:** 安装 [Tampermonkey](https://tampermonkey.net/)，然后打开上述安装页面，点击**安装脚本**。
 
 其他浏览器也有相关插件（比如傲游的暴力猴之类的），我不是很熟悉。
 

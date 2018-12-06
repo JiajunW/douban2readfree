@@ -1,4 +1,4 @@
-#readfree-link{
+.readfree-link{
     border-radius: 10px;
     background: -webkit-linear-gradient(top, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));
     background:   -mozc-linear-gradient(top, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));
@@ -9,18 +9,18 @@
     outline: none;
 }
 
-#readfree-link > a {
+a.readfree-link {
     color: white;
 }
 
-#book_info-link {
+.book_info-link {
     position: fixed;
     top: 160px;
     left: -10px;
     padding: 10px 20px 10px 30px;
 }
 
-#all_books_link {
+.all_books_link {
     height: 21px;
     line-height: 21px;
     padding: 0 11px;

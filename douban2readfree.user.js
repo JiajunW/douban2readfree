@@ -5,7 +5,7 @@
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     https://book.douban.com/*
 // @version     2.0.0
-// @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
+// @resource    custom_css https://raw.githubusercontent.com/carycoti/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
@@ -39,7 +39,7 @@ function dom(tag, attr, inner) {
     return el;
 }
 
-function rf_book_body() {
+function add_link_to_book_info () {
     let path = document.location.pathname;
     let id = get_book_id(path);
     if (id) {
@@ -49,18 +49,17 @@ function rf_book_body() {
             url: rf_url,
             onload: function (response) {
                 if (response.status === 200) {
-                    let panel = dom('div', {id: 'readfree-link'});
+                    let panel = dom('div', {id: 'readfree-link', class: 'readfree-link book_info-link'});
                     let ahref = dom('a', {href: rf_url, target: '_blank'}, 'ReadFree!');
                     panel.appendChild(ahref);
                     document.body.appendChild(panel);
-                    add_readfree_style();
                 }
             }
         })
     }
 }
 
-function all_book() {
+function add_links_to_all_books() {
     let my_a = document.querySelectorAll("a");
     for (let i = 0; i < my_a.length; i++) {
         let this_a = my_a[i];
@@ -74,7 +73,7 @@ function all_book() {
                         url: rf_url,
                         onload: function (response) {
                             if (response.status === 200) {
-                                let ahref = dom('a', {class: 'sel_btn', href: rf_url, target: '_blank'}, 'ReadFree!');
+                                let ahref = dom('a', {class: 'readfree-link all_books_link', href: rf_url, target: '_blank'}, 'ReadFree!');
                                 this_a.parentNode.insertBefore(ahref, this_a.nextSibling);
                             }
                         }
@@ -86,8 +85,9 @@ function all_book() {
 }
 
 function main(){
-    rf_book_body();
-    all_book();
+    add_readfree_style();
+    add_link_to_book_info();
+    add_links_to_all_books();
 }
 
 log(window.setTimeout(function(){main();}, 0));
