@@ -5,7 +5,6 @@
     background:         linear-gradient(to bottom, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));
     display: inline-block;
     text-decoration: none;
-    font-size: 12px;
     outline: none;
 }
 
@@ -25,4 +24,5 @@ a.readfree-link {
     height: 21px;
     line-height: 21px;
     padding: 0 11px;
+    font-size: 12px;
 }
