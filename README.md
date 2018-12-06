@@ -21,10 +21,10 @@ ReadFree（ http://readfree.me/ ）是超好用的电子书分享平台，在这
 ![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep4.png)
 
 ## 使用方法
-1. 先安装脚本管理器
-* Firefox: 安装[Greasemonkey](https://addons.mozilla.org/en-UgS/firefox/addon/greasemonkey/)
-* Chrome: 安装[Tampermonkey](https://tampermonkey.net/)
-2. 然后打开[JS脚本安装页面](https://greasyfork.org/zh-CN/scripts/4905-豆瓣-readfree-传送门)，点击**安装脚本**
+1. 安装脚本管理器
+* **Firefox**: 安装[Greasemonkey](https://addons.mozilla.org/en-UgS/firefox/addon/greasemonkey/)
+* **Chrome**: 安装[Tampermonkey](https://tampermonkey.net/)
+2. 打开[JS脚本安装页面](https://greasyfork.org/zh-CN/scripts/4905-豆瓣-readfree-传送门)，点击**安装脚本**
 
 > 其他浏览器也有相关插件（比如傲游的暴力猴之类的），我不是很熟悉。
 
