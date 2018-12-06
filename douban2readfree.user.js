@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        豆瓣 ReadFree 传送门
 // @namespace   https://github.com/JiajunW/douban2readfree
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
