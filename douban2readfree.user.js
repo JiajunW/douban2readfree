@@ -4,7 +4,7 @@
 // @description 在“豆瓣读书”页面增加到ReadFree电子书的传送门
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     https://book.douban.com/*
-// @version     1.0.5
+// @version     2.0.0
 // @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
@@ -13,8 +13,6 @@
 // ==/UserScript==
 
 const log = console.log.bind(console);
-GM_addStyle('.sel_btn{height: 21px;line-height: 21px;padding: 0 11px;background: -webkit-linear-gradient(top, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));background:   -mozc-linear-gradient(top, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));background:         linear-gradient(to bottom, rgba(50, 74, 105, 0.8), rgba(50, 74, 105, 1));display: inline-block;text-decoration: none;font-size: 12px;outline: none;}');
-GM_addStyle('a.sel_btn{color: white;}');
 
 function get_book_id(url) {
     let re = /\/subject\/(\d+)(\/?$|\/.icn=(index-topchart-subject|index-book250-subject|index-editionrecommend)$)/g;
