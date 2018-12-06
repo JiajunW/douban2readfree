@@ -49,8 +49,8 @@ function add_link_to_book_info () {
             url: rf_url,
             onload: function (response) {
                 if (response.status === 200) {
-                    let panel = dom('div', {id: 'readfree-link', class: 'readfree-link book_info-link'});
-                    let ahref = dom('a', {href: rf_url, target: '_blank'}, 'ReadFree!');
+                    let panel = dom('div', {id: 'readfree-link'});
+                    let ahref = dom('a', { class: 'readfree-link book_info-link', href: rf_url, target: '_blank'}, 'ReadFree!');
                     panel.appendChild(ahref);
                     document.body.appendChild(panel);
                 }
@@ -90,4 +90,4 @@ function main(){
     add_links_to_all_books();
 }
 
-log(window.setTimeout(function(){main();}, 0));
+main();
