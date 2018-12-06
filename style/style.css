@@ -6,6 +6,7 @@
     display: inline-block;
     text-decoration: none;
     outline: none;
+    font-size: 12px;
 }
 
 a.readfree-link {
@@ -17,12 +18,10 @@ a.readfree-link {
     top: 160px;
     left: -10px;
     padding: 10px 20px 10px 30px;
-    font-size: 16px;
 }
 
 .all_books_link {
     height: 21px;
     line-height: 21px;
     padding: 0 11px;
-    font-size: 12px;
 }
