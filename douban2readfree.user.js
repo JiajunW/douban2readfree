@@ -5,14 +5,12 @@
 // @icon        https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/icon.png
 // @include     https://book.douban.com/*
 // @version     2.0.0
-// @resource    custom_css https://raw.githubusercontent.com/carycoti/douban2readfree/master/style/style.css
+// @resource    custom_css https://raw.githubusercontent.com/JiajunW/douban2readfree/master/style/style.css
 // @grant       GM_xmlhttpRequest
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
 // @connect     readfree.me
 // ==/UserScript==
-
-const log = console.log.bind(console);
 
 function get_book_id(url) {
     let re = /\/subject\/(\d+)(\/?$|\/.icn=(index-topchart-subject|index-book250-subject|index-editionrecommend)$)/g;

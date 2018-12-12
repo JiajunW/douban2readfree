@@ -11,14 +11,14 @@ ReadFree（ http://readfree.me/ ）是超好用的电子书分享平台，在这
 ## 截图
 
 #### 书籍内页效果
-![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep1.png)  
+![](https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/ep1.png)  
 
-![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep2.png)
+![](https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/ep2.png)
 
-![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep3.png)
+![](https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/ep3.png)
 
 #### 首页效果
-![](https://raw.githubusercontent.com/carycoti/douban2readfree/master/res/ep4.png)
+![](https://raw.githubusercontent.com/JiajunW/douban2readfree/master/res/ep4.png)
 
 ## 使用方法
 1. 安装脚本管理器
